@@ -1014,7 +1014,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "**DO NOT** I repeat ***DO NOT*** fiddle with the metaparameters to improve test data accuracy **WITHOUT** generating a new set of data samples. This invariably leads to overfitting. We are lucky enough to be working on a project where we literally make our own data."
+    "This completes the data generation protocol."
    ]
   },
   {

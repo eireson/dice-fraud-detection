@@ -6,7 +6,9 @@ The Player's Handbook specifies that, to generate a single statistic value, one 
 
 Since such dice rolls are easy to simulate on a computer, we can train a Neural Network to recognise their statistical features. Specifically, were another player to try and cheat their team-mates and the Dungeon Master by using an appropriately tweaked generation method, with higher average or lower standard deviation for instance, the NN would recognise abnormal features and reject it.
 
-In theory, a well-motivated enough probabilist could compute by hand the analytical expressions for a variant of the T-test (which aims to detect if a small number of sample points were generated using a normal distribution) based around discrete uniform distributions, but the point is to illustrate the power of Neural Networks for fraud detection on a very controllable example. Dungeons and Dragons dice rolls are at the same time practical and concrete enough for this project to feel like a fun, realistic endeavour, and also inherently easy to generate in very large quantities on a computer.
+Classical statistics would advise us to treat the stat block as a sampling of some inherent distribution and obtain a p-value from it. Because the number of points is small and the distribution is discrete, statistical outliers are likely and this is not a particularly informative test.
+
+The point is to illustrate the power of Neural Networks for fraud detection on a very controllable example. Dungeons and Dragons dice rolls are at the same time practical and concrete enough for this project to feel like a fun, realistic endeavour, and also inherently easy to generate in very large quantities on a computer.
 
 The code runs in three steps:
 
